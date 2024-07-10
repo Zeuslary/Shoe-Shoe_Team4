@@ -1,0 +1,274 @@
+:root {
+    --primary-color: #ee4d2d;
+    --white-color: #fff;
+    --black-color: #2f2f2f;
+    --text-color: #ccc;
+    --red-color: #ee4d2d;
+    --grey-color: #f6f6f6;
+    --shadow-color: rgba(149, 157, 165, 0.6);
+    --green-color: #27a243;
+    --cardinal-color: #c51e3a;
+    --blue-color: #0096ff;
+}
+
+
+/* Flex box */
+.flex-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-xy-center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Text */
+.upper-case {
+    text-transform: uppercase;
+}
+
+.lower-car {
+    text-transform: lowercase;
+}
+
+.capitalize-case {
+    text-transform: capitalize;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Font Weight */
+.font-bold {
+    font-weight: 500;
+}
+
+
+
+/* Ul */
+.ul-clear {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+/* Box-Model */
+.pt-8 {
+    padding-top: 8px;
+}
+
+.pb-12 {
+    padding-bottom: 12px;
+}
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.pd-x-24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.pd-x-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.pd-y-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.pd-y-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pr-24 {
+    padding-right: 24px;
+}
+
+.pd-16 {
+    padding: 16px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.m-y-12 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.m-y-28 {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+/* Button */
+.btn {
+    text-decoration: none;
+    color: var(--black-color);
+    padding: 12px 24px;
+    display: block;
+    position: relative;
+    font-size: 16px;
+}
+
+.btn--s {
+    padding: 12px 18px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.active {
+    font-weight: 500;
+}
+
+.btn--radius {
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.btn--red  {
+    color: var(--red-color);
+    background-color: var(--white-color);
+    border: 1px solid var(--red-color);
+}
+
+.btn--green  {
+    color: var(--white-color);
+    background-color: var(--green-color);
+    border: 1px solid var(--white-color);
+    min-width: 60px;
+    text-align: center;
+}
+
+.btn--cardinal {
+    color: var(--white-color);
+    background-color: var(--cardinal-color);
+}
+
+.btn--blue {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+
+.btn--1-char {
+    padding: 10px 16px;
+}
+
+.btn--icon {
+    font-size: 12px;
+}
+
+
+/* Transform */
+.tranY-1 {
+    transform: translateY(1px);
+}
+
+
+/* Grid */
+.grid {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-left: -8px;
+    margin-right: -8px;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.333%;
+}
+
+.col-1-5 {
+    width: 12.5%;
+}
+
+.col-2 {
+    width: 16.667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-1,
+.col-1-5,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Grid mobile */
+@media (max-width: 640px) {
+    .col-6-s {
+        width: 50%;
+    }
+    
+    .col-6-s {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+}

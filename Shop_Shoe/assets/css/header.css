@@ -1,0 +1,57 @@
+/* Toolbar */
+#toolbar {
+    background-color: var(--white-color);
+    z-index: 10;
+    box-shadow: var(--shadow-color) 3px 1px 8px;
+}
+
+    .toolbar__logo {
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .toolbar__brand {
+        width: 100%;
+        max-width: 50px;
+        transform: translateX(-25%);
+    }
+
+    .toolbar__cart {
+        color: var(--black-color);
+        position: relative;
+    }
+
+    .toolbar__cart__quantity {
+        --edge: 12px;
+        color: var(--white-color);
+        background-color: var(--red-color);
+        width: calc(var(--edge) + 6px);
+        height: var(--edge);
+        display: block;
+        text-align: center;
+        line-height: var(--edge);
+        border-radius: 40%;
+        font-size: 10px;
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        z-index: 20;
+    }
+
+    .toolbar__item::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: var(--red-color);
+        position: absolute;
+        bottom: 4px;
+        left: 50%;
+        z-index: 20;
+        transform: translateX(-50%);
+        transition: width ease-in-out 0.3s;
+    }
+
+    .toolbar__item:hover::after,
+    .toolbar__item.active::after {
+        width: calc(100% - 30px);
+    }

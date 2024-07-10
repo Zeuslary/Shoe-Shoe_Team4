@@ -1,0 +1,33 @@
+/* Bills */
+#bills {
+    margin: 36px 0;
+}
+
+.bills__header {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bills__body {
+    margin: 16px 0;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    font-size: 12px;
+    padding: 8px 0;
+}
+
+.bills__btn--close {
+    font-size: 16px;
+    color: var(--red-color);
+    padding: 8px 14px;
+    display: inline-block;
+}
+
+.bills__btn--close:hover {
+    cursor: pointer;
+}
+
+.bills__footer {
+    margin-top: 28px;
+}
+

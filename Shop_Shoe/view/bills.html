@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <script
+      src="https://kit.fontawesome.com/5648a26886.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/general.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/bills.css" />
+
+    <title>Bills</title>
+  </head>
+  <body>
+    <div id="toolbar" class="flex-box space-between pd-x-24 align-center">
+      <div class="flex-box align-center">
+        <img
+          class="toolbar__logo"
+          src="../assets/img/logo_nike.png"
+          alt="Nike"
+        />
+        <img
+          class="toolbar__brand"
+          src="../assets/img/brand_nike.png"
+          alt="Nike"
+          srcset=""
+        />
+      </div>
+
+      <ul class="ul-clear flex-box space-between">
+        <li class="upper-case">
+          <a class="btn btn--s toolbar__item" href="/view/home.html"
+            >Home</a
+          >
+        </li>
+        <li class="upper-case">
+          <a class="btn btn--s toolbar__item" href="/view/about.html">About</a>
+        </li>
+        <li class="upper-case">
+          <a class="btn btn--s toolbar__item active" href="/view/bills.html">Bills</a>
+        </li>
+        <li>
+          <a class="btn btn--s toolbar__cart" href="/view/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="toolbar__cart__quantity">3</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <div id="bills">
+  
+        <!-- Bill header -->
+        <div class="bills__header">
+          <div class="row">
+            <div class="col-1-5">
+              <p class="capitalize-case text-center">Code</p>
+            </div>
+
+            <div class="col-2">
+              <p class="capitalize-case text-center">Customer name</p>
+            </div>
+
+            <div class="col-1-5">
+              <p class="capitalize-case text-center">Date</p>
+              
+            </div>
+
+            <div class="col-2">
+              <p class="capitalize-case text-center">Item numbers</p>
+            </div>
+
+            <div class="col-2">
+              <p class="capitalize-case text-center">Total quantity</p>
+            </div>
+
+            <div class="col-1-5">
+              <p class="capitalize-case text-center">Total price</p>
+            </div>
+
+            <div class="col-1-5">
+              <p class="capitalize-case text-center">Return</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bill body -->
+        <div class="bills__body">
+          <div class="row flex-xy-center">
+            <div class="col-1-5">
+              <p class="text-center">uir9flfwo</p>
+            </div>
+
+            <div class="col-2">
+              <p class="text-center">Admin admin</p>
+            </div>
+
+            <div class="col-1-5">
+              <p class="text-center">18/04/2024</p>
+              
+            </div>
+
+            <div class="col-2">
+              <p class="text-center">1</p>
+            </div>
+
+            <div class="col-2">
+              <p class="text-center">1</p>
+            </div>
+
+            <div class="col-1-5">
+              <p class="text-center">$4200</p>
+            </div>
+
+            <div class="col-1-5 text-center">
+              <p class="bills__btn--close text-center">
+                <i class="fa-regular fa-rectangle-xmark"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bill footer -->
+        <div class="bills__footer">
+          <div class="flex-box">
+            <p class="btn btn--radius btn--red capitalize-case js-bills__btn--back">
+              <i class="fa-solid fa-arrow-left"></i>
+              Back to shopping
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </body>
+</html>
